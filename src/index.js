@@ -8,6 +8,10 @@ import { CartProvider } from './context/cart_context'
 import { UserProvider } from './context/user_context'
 import { Auth0Provider } from '@auth0/auth0-react'
 
+if (module.hot) {
+  module.hot.accept()
+}
+
 ReactDOM.render(
   <Auth0Provider
     domain='dev-4w3m37p3.us.auth0.com'
