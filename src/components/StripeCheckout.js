@@ -105,6 +105,12 @@ const CheckoutForm = () => {
           <h4>Hello, {myUser && myUser.name}</h4>
           <p>Your total is {formatPrice(shipping_fee + total_amount)}</p>
           <p>Test Card Number : 4242 4242 4242 4242</p>
+          <p>
+            <strong>
+              Attention: Use test card to check payment functionality. Don't use
+              your card!!!
+            </strong>
+          </p>
         </article>
       )}
       <form id='payment-form' onSubmit={handleSubmit}>
