@@ -14,8 +14,8 @@ if (module.hot) {
 
 ReactDOM.render(
   <Auth0Provider
-    domain='dev-4w3m37p3.us.auth0.com'
-    clientId='hqzZ2TJXDEsATPIyk8MlyZX3YG5oAXkP'
+    domain={process.env.REACT_APP_AUTH_DOMAIN}
+    clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
     redirectUri={window.location.origin}
     cacheLocation='localstorage'
   >
